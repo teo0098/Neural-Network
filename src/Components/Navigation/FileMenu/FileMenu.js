@@ -24,6 +24,7 @@ const FileMenu = () => {
                 <MenuItem onClick={handleClose}>Nowy projekt</MenuItem>
                 <MenuItem onClick={handleClose}>Otwórz projekt</MenuItem>
                 <MenuItem onClick={handleClose}>Zapisz</MenuItem>
+                <MenuItem onClick={handleClose}>DUPA</MenuItem>
             </Menu>
         </div>
     )
