@@ -4,8 +4,7 @@ const useActivationFunction = () => {
 
     const sigmoidFunction = (argument, derivative) => {
         const pattern = 1 / (1 + exp(argument * -1))
-        if (!derivative) return pattern
-        return pattern * (1 - pattern)
+        return derivative ? pattern * (1 - pattern) : pattern
     }
 
     return { sigmoidFunction }
