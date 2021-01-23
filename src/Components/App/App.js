@@ -1,26 +1,62 @@
 import { matrix } from 'mathjs'
+import { connect } from 'react-redux'
 
 import useNeuralNetwork from '../customHooks/useNeuralNetwork';
-import usePredictResult from '../customHooks/usePredictResult';
 import useTrainNetwork from '../customHooks/useTrainNetwork';
 import Navigation from '../Navigation/Navigation'
 
-const input = matrix([[0,0], [0,1], [1,0], [1,1]])
-const target = matrix([[0], [1], [1], [0]])
+//const input = matrix([[0,0], [0,1], [1,0], [1,1]])
+//const target = matrix([[0], [1], [1], [0]])
 
-const App = () => {
+const data = [
+  {
+    input: [0,0],
+    target: 0,
+    learning_error: undefined,
+    learning_success: undefined
+  },
+  {
+    input: [0,1],
+    target: 1,
+    learning_error: undefined,
+    learning_success: undefined
+  },
+  {
+    input: [1,0],
+    target: 1,
+    learning_error: undefined,
+    learning_success: undefined
+  },
+  {
+    input: [1,1],
+    target: 0,
+    learning_error: undefined,
+    learning_success: undefined
+  },
+]
 
-  const { weights1, weights2, weights3, epochs, learning_rate } = useNeuralNetwork(2, 4, 4, 1, 50000, 0.5, true)
-  const { predict } = usePredictResult()
+const App = (props) => {
+
+  const { weights1, weights2, weights3, epochs, learning_rate, bias, input_layer_n, hidden_layer_1_n, hidden_layer_2_n, output_layer_n } = useNeuralNetwork(props)
   const { train } = useTrainNetwork()
 
   return (
     <>
       <Navigation />
-      {train(input, target, epochs, weights1, weights2, weights3, learning_rate)}
-      {console.log(predict(input, weights1, weights2, weights3))}
+      {train(data, epochs, weights1, weights2, weights3, learning_rate, bias, input_layer_n, hidden_layer_1_n, hidden_layer_2_n, output_layer_n)}
     </>
   );
 }
 
-export default App;
+const mapStateToProps = state => ({
+  input_layer_neurons: state.input_layer_neurons,
+  hidden_layer_1_neurons: state.hidden_layer_1_neurons,
+  hidden_layer_2_neurons: state.hidden_layer_2_neurons,
+  output_layer_neurons: state.output_layer_neurons,
+  epochs: state.epochs,
+  learning_rate: state.learning_rate,
+  bias: state.bias,
+  max_weights_value: state.max_weights_value
+})
+
+export default connect(mapStateToProps)(App);

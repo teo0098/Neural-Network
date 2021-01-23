@@ -1,30 +1,39 @@
-import { random, matrix } from 'mathjs'
+import { random } from 'mathjs'
 
-const useNeuralNetwork = (input_n, hidden_n, hidden_n_2, output_n, epochs_number, learning_r, b) => {
+const useNeuralNetwork = ({ 
+    input_layer_neurons,
+    hidden_layer_1_neurons,
+    hidden_layer_2_neurons,
+    output_layer_neurons,
+    epochs: epochs_number,
+    learning_rate: learning_r,
+    bias: b,
+    max_weights_value
+   }) => {
 
-    const input_neurons = input_n
-    const hidden_neurons = hidden_n
-    const hidden_neurons_2 = hidden_n_2
-    const output_neurons = output_n
+    const input_layer_n = input_layer_neurons
+    const hidden_layer_1_n = hidden_layer_1_neurons
+    const hidden_layer_2_n = hidden_layer_2_neurons
+    const output_layer_n = output_layer_neurons
     const epochs = epochs_number
     const learning_rate = learning_r
-    const weights1 = matrix(random([input_neurons, hidden_neurons], -1, 1))
-    const weights2 = matrix(random([hidden_neurons, hidden_neurons_2], -1, 1))
-    const weights3 = matrix(random([hidden_neurons_2, output_neurons], -1, 1))
+    const weights1 = [...Array(input_layer_n * hidden_layer_1_n)].map( value => {
+        return value = random(max_weights_value * -1, max_weights_value)
+    })
+    const weights2 = [...Array(hidden_layer_1_n * hidden_layer_2_n)].map( value => {
+        return value = random(max_weights_value * -1, max_weights_value)
+    })
+    const weights3 = [...Array(hidden_layer_2_n * output_layer_n)].map( value => {
+        return value = random(max_weights_value * -1, max_weights_value)
+    })
+    /*
+    const weights1 = random([input_layer_n, hidden_layer_1_n], -1 * max_weights_value, max_weights_value)
+    const weights2 = random([hidden_layer_1_n, hidden_layer_2_n], -1 * max_weights_value, max_weights_value)
+    const weights3 = random([hidden_layer_2_n, output_layer_n], -1 * max_weights_value, max_weights_value)
+    */
     const bias = b
 
-    console.log('Input layer neurons amount', input_neurons)
-    console.log('Hidden layer neurons amount', hidden_neurons)
-    console.log('Hidden layer 2 neurons amount', hidden_neurons_2)
-    console.log('Output layer neurons amount', output_neurons)
-    console.log('Epocs amount', epochs)
-    console.log('Network learning rate', learning_rate)
-    console.log('Weights from input layer to hidden layer', weights1)
-    console.log('Weights from hidden layer to hidden layer 2', weights2)
-    console.log('Weights from hidden layer 2 to output layer', weights3)
-    console.log('Bias', bias)
-
-    return { epochs, learning_rate, weights1, weights2, weights3, bias }
+    return { epochs, learning_rate, weights1, weights2, weights3, bias, input_layer_n, hidden_layer_1_n, hidden_layer_2_n, output_layer_n }
 }
 
 export default useNeuralNetwork

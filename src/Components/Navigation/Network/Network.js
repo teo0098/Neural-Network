@@ -26,7 +26,6 @@ const Network = () => {
                     <Popover />
                 </MenuItem>
                 <MenuItem onClick={handleClose}>Uczenie sieci</MenuItem>
-                <MenuItem onClick={handleClose}>Uruchomienie sieci</MenuItem>
             </Menu>
         </div>
     )
