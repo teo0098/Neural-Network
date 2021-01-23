@@ -1,4 +1,4 @@
-import { multiply, subtract, dotMultiply, transpose, add } from 'mathjs'
+import { multiply, subtract, dotMultiply, transpose, add, mean } from 'mathjs'
 
 import useActivationFunction from './useActivationFunction'
 
@@ -19,22 +19,47 @@ const useTrainNetwork = () => {
         return filledLayer
     }
 
+    const assignLayerErrors = (layer_neurons, next_layer_neurons, next_layer_errors, weights) => {
+        const layerErrors = [...Array(layer_neurons)].map( (value, index) => {
+            value = 0
+            for (let i = 0; i < next_layer_neurons; i++) {
+                value += (next_layer_errors[i] * weights[(i * layer_neurons) + index])
+            }
+            return value
+        })
+        return layerErrors
+    }
+
     const train = (data, epochs, weights1, weights2, weights3, learning_rate, bias, input_layer_n, hidden_layer_1_n, hidden_layer_2_n, output_layer_n) => {
         for (let i = 0; i < epochs; i++) {
 
             // * FORWARD PROPAGATION
 
-            const hidden_layer = assignLayerValues(data[0].input, hidden_layer_1_n, input_layer_n, weights1, bias)
-            const hidden_layer_2 = assignLayerValues(hidden_layer, hidden_layer_2_n, hidden_layer_1_n, weights2, bias)
+            const hidden_layer_1 = assignLayerValues(data[0].input, hidden_layer_1_n, input_layer_n, weights1, bias)
+            const hidden_layer_2 = assignLayerValues(hidden_layer_1, hidden_layer_2_n, hidden_layer_1_n, weights2, bias)
             const output_layer = assignLayerValues(hidden_layer_2, output_layer_n, hidden_layer_2_n, weights3, bias)
 
             // * OUTPUT ERROR
 
-            data[0].learning_error = data[0].target - output_layer[0]
+            data[0].learning_error = data[0].target - mean(output_layer)
 
             // * BACK PROPAGATION
 
-            
+            let hidden_layer_2_errors = [...Array(hidden_layer_2_n)].map( (value, index) => {
+                return value = data[0].learning_error + weights3[index]
+            })
+            let hidden_layer_1_errors = assignLayerErrors(hidden_layer_1_n, hidden_layer_2_n, hidden_layer_2_errors, weights2)
+            let input_layer_errors = assignLayerErrors(input_layer_n, hidden_layer_1_n, hidden_layer_1_errors, weights1)
+
+            hidden_layer_2_errors = hidden_layer_2_errors.map(value => sigmoidFunction(value + bias, true))
+            hidden_layer_1_errors = hidden_layer_1_errors.map(value => sigmoidFunction(value + bias, true))
+            input_layer_errors = input_layer_errors.map(value => sigmoidFunction(value + bias, true))
+
+            debugger
+
+            weights1 = weights1.map(weight => weight + (learning_rate))
+
+            debugger
 
             /*
             // * FORWARD PROPAGATION
