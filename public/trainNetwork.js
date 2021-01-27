@@ -66,7 +66,7 @@ self.addEventListener('message', e => {
     
                 // * OUTPUT ERROR
     
-                data[j].learning_error = data[j].target - output_layer[0]
+                data[j].learning_error = data[j].target - (output_layer[0] * data[j].target)
     
                 // * BACK PROPAGATION
     
@@ -83,7 +83,7 @@ self.addEventListener('message', e => {
                 weights2 = upadateWeights(weights2, learning_rate, hidden_layer_2_errors, hidden_layer_1, hidden_layer_1_n)
                 weights3 = weights3.map( (weight, index) => weight = weight + (learning_rate * data[j].learning_error * hidden_layer_2[index]))
     
-                data[j].learning_success = output_layer[0]
+                data[j].learning_success = data[j].target - data[j].learning_error
             }
             data[j].learning_error = data[j].learning_error < 0 ? data[j].learning_error * -1 : data[j].learning_error
         }
