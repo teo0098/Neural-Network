@@ -22,8 +22,8 @@ const NetworkStructure = ({
             <form noValidate style={{display: 'flex', flexDirection: 'column'}}>
                 <TextField value={input_layer_neurons} disabled inputProps={{min: 0}} style={inputStyles} type="number" label="Warstwa wejściowa" variant="outlined" />
                 <TextField value={output_layer_neurons} disabled inputProps={{min: 0}} style={inputStyles} type="number" label="Warstwa wyjściowa" variant="outlined" />
-                <TextField onChange={e => change_hidden_layer_1_neurons(e.target.value)} value={hidden_layer_1_neurons} inputProps={{min: 0}} style={inputStyles} type="number" label="Warstwa ukryta 1" variant="outlined" />
-                <TextField onChange={e => change_hidden_layer_2_neurons(e.target.value)} value={hidden_layer_2_neurons} inputProps={{min: 0}} style={inputStyles} type="number" label="Warstwa ukryta 2" variant="outlined" />
+                <TextField onChange={e => change_hidden_layer_1_neurons(+e.target.value)} value={hidden_layer_1_neurons} inputProps={{min: 0}} style={inputStyles} type="number" label="Warstwa ukryta 1" variant="outlined" />
+                <TextField onChange={e => change_hidden_layer_2_neurons(+e.target.value)} value={hidden_layer_2_neurons} inputProps={{min: 0}} style={inputStyles} type="number" label="Warstwa ukryta 2" variant="outlined" />
                 <FormControlLabel
                    onChange={() => bias === 0 ? change_bias(1) : change_bias(0)}
                     style={inputStyles}

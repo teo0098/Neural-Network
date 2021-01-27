@@ -14,8 +14,8 @@ const LearningProcess = ({
     return (
         <div>
             <form noValidate style={{display: 'flex', flexDirection: 'column'}}>
-                <TextField onChange={e => change_learning_rate(e.target.value)} value={learning_rate} inputProps={{min: 0, step: 0.1}} style={inputStyles} type="number" label="Współczynnik uczenia" variant="outlined" />
-                <TextField onChange={e => change_max_weights_value(e.target.value)} value={max_weights_value} inputProps={{min: 0, step: 0.1}} style={inputStyles} type="number" label="Maksymalna wartość wag +/-" variant="outlined" />
+                <TextField onChange={e => change_learning_rate(+e.target.value)} value={learning_rate} inputProps={{min: 0, step: 0.1}} style={inputStyles} type="number" label="Współczynnik uczenia" variant="outlined" />
+                <TextField onChange={e => change_max_weights_value(+e.target.value)} value={max_weights_value} inputProps={{min: 0, step: 0.1}} style={inputStyles} type="number" label="Maksymalna wartość wag +/-" variant="outlined" />
             </form>
         </div>
     )
