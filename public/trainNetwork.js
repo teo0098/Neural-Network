@@ -71,7 +71,7 @@ self.addEventListener('message', e => {
                 // * BACK PROPAGATION
     
                 let hidden_layer_2_errors = [...Array(hidden_layer_2_n)].map( (value, index) => {
-                    return value = data[j].learning_error + weights3[index]
+                    return value = data[j].learning_error * weights3[index]
                 })
                 let hidden_layer_1_errors = assignLayerErrors(hidden_layer_1_n, hidden_layer_2_n, hidden_layer_2_errors, weights2)
                 hidden_layer_2_errors = hidden_layer_2_errors.map( value => sigmoidFunction(value + bias, true))

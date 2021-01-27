@@ -27,6 +27,7 @@ const App = props => {
   const [data, setData] = useState([])
   const [diseases, setDiseases] = useState([])
   const [isTraining, setIsTraning] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   const classes = useStyles()
 
@@ -36,6 +37,7 @@ const App = props => {
       const dis = await readDiseasesFile()
       setData(d)
       setDiseases(dis)
+      setIsLoading(false)
     }
     getData()
   }, [])
@@ -56,8 +58,9 @@ const App = props => {
       <Navigation>
         <Network setIsTraning={setIsTraning} />
       </Navigation>
+      {isLoading ? <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}>Wczytywanie...</p> : null}
       {isTraining ? <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}>Trwa proces uczenia...</p> : null}
-      {diseases.length !== 0 && data.length !== 0 ?
+      {diseases.length !== 0 && data.length !== 0 && !isLoading ?
         <div style={{ padding: '20px' }}>
           <TableContainer component={Paper}>
             <Table className={classes.table} aria-label="simple table">
