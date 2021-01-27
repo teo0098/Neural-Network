@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import NetworkStructure from './NetworkStructure/NetworkStructure';
-import TestingProcess from './TestingProcess/TestingProcess';
 import LearningProcess from './LearningProcess/LearningProcess';
 
 const AccordionComponent = () => {
@@ -32,18 +31,6 @@ const AccordionComponent = () => {
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2bh-content"
-                id="panel2bh-header"
-                >
-                <Typography>Parametry procesu testowania</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                <TestingProcess />
-                </AccordionDetails>
-            </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel3bh-content"

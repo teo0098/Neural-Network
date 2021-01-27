@@ -1,5 +1,3 @@
-import { exp } from 'mathjs'
-
 const useActivationFunction = () => {
 
     /**
@@ -11,7 +9,7 @@ const useActivationFunction = () => {
      */
 
     const sigmoidFunction = (argument, derivative) => {
-        const y = 1 / (1 + exp(argument * -1))
+        const y = 1 / (1 + Math.exp(argument * -1))
         return derivative ? y * (1 - y) : y
     }
 

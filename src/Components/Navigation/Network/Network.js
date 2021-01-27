@@ -6,7 +6,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Popover from '../../Popover/Popover';
 import usePopup from '../../customHooks/usePopup';
 
-const Network = () => {
+const Network = ({ setIsTraning }) => {
 
     const { anchorEl, handleOpen, handleClose } = usePopup();
 
@@ -25,7 +25,10 @@ const Network = () => {
                 <MenuItem onClick={handleClose}>
                     <Popover />
                 </MenuItem>
-                <MenuItem onClick={handleClose}>Uczenie sieci</MenuItem>
+                <MenuItem onClick={() => {
+                    handleClose()
+                    setIsTraning(true)
+                }}>Uczenie sieci</MenuItem>
             </Menu>
         </div>
     )

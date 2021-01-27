@@ -1,0 +1,138 @@
+we;we;we;we;we;we;we;we;we;we;we;we;wy
+Bole miesni;Bole glowy;Bole gardla;Bole brzucha;Kaszel;Katar;Goraczka;Problemy oddechowe;Biegunka;Zmeczenie;Kichanie;Wymioty;Choroba
+lekkie;brak;lekkie;brak;suchy;przezroczysty;brak;brak;brak;lekkie;notoryczne;brak;przeziebienie
+lekkie;brak;lekkie;brak;mokry;przezroczysty;brak;brak;brak;lekkie;notoryczne;brak;przeziebienie
+lekkie;brak;lekkie;brak;suchy;zolty;brak;brak;brak;lekkie;notoryczne;brak;przeziebienie
+lekkie;brak;lekkie;brak;mokry;zolty;brak;brak;brak;lekkie;notoryczne;brak;przeziebienie
+lekkie;brak;lekkie;brak;suchy;zielony;brak;brak;brak;lekkie;notoryczne;brak;przeziebienie
+lekkie;brak;lekkie;brak;mokry;zielony;brak;brak;brak;lekkie;notoryczne;brak;przeziebienie
+silne;silne;brak;brak;suchy;brak;tak;brak;brak;silne;brak;brak;grypa
+silne;silne;brak;brak;suchy;przezroczysty;tak;brak;brak;silne;brak;brak;grypa
+silne;silne;lekkie;brak;suchy;brak;tak;brak;brak;silne;brak;brak;grypa
+silne;silne;lekkie;brak;suchy;przezroczysty;tak;brak;brak;silne;brak;brak;grypa
+silne;silne;brak;brak;suchy;brak;tak;lekkie;brak;silne;brak;brak;grypa
+silne;silne;brak;brak;suchy;przezroczysty;tak;lekkie;brak;silne;brak;brak;grypa
+silne;silne;lekkie;brak;suchy;brak;tak;lekkie;brak;silne;brak;brak;grypa
+silne;silne;lekkie;brak;suchy;przezroczysty;tak;lekkie;brak;silne;brak;brak;grypa
+silne;lekkie;brak;brak;suchy;brak;tak;brak;brak;silne;brak;brak;grypa
+silne;lekkie;brak;brak;suchy;przezroczysty;tak;brak;brak;silne;brak;brak;grypa
+silne;lekkie;lekkie;brak;suchy;brak;tak;brak;brak;silne;brak;brak;grypa
+silne;lekkie;lekkie;brak;suchy;przezroczysty;tak;brak;brak;silne;brak;brak;grypa
+silne;lekkie;brak;brak;suchy;brak;tak;lekkie;brak;silne;brak;brak;grypa
+silne;lekkie;brak;brak;suchy;przezroczysty;tak;lekkie;brak;silne;brak;brak;grypa
+silne;lekkie;lekkie;brak;suchy;brak;tak;lekkie;brak;silne;brak;brak;grypa
+silne;lekkie;lekkie;brak;suchy;przezroczysty;tak;lekkie;brak;silne;brak;brak;grypa
+lekkie;lekkie;lekkie;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+lekkie;lekkie;lekkie;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+lekkie;lekkie;lekkie;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+lekkie;lekkie;lekkie;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+brak;lekkie;lekkie;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+brak;lekkie;lekkie;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+brak;lekkie;lekkie;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+brak;lekkie;lekkie;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+lekkie;brak;lekkie;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+lekkie;brak;lekkie;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+lekkie;brak;lekkie;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+lekkie;brak;lekkie;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+brak;brak;lekkie;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+brak;brak;lekkie;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+brak;brak;lekkie;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+brak;brak;lekkie;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+lekkie;lekkie;brak;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+lekkie;lekkie;brak;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+lekkie;lekkie;brak;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+lekkie;lekkie;brak;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+brak;lekkie;brak;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+brak;lekkie;brak;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+brak;lekkie;brak;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+brak;lekkie;brak;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+lekkie;brak;brak;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+lekkie;brak;brak;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+lekkie;brak;brak;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+lekkie;brak;brak;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+brak;brak;brak;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;covid
+brak;brak;brak;brak;suchy;brak;tak;silne;brak;silne;brak;brak;covid
+brak;brak;brak;brak;suchy;brak;tak;silne;tak;lekkie;brak;brak;covid
+brak;brak;brak;brak;suchy;brak;tak;silne;tak;silne;brak;brak;covid
+brak;lekkie;brak;brak;suchy;przezroczysty;tak;silne;brak;lekkie;notoryczne;brak;alergia
+brak;lekkie;brak;brak;suchy;zolty;tak;silne;brak;lekkie;notoryczne;brak;alergia
+brak;lekkie;brak;brak;suchy;zielony;tak;silne;brak;lekkie;notoryczne;brak;alergia
+brak;lekkie;brak;brak;mokry;przezroczysty;tak;silne;brak;lekkie;notoryczne;brak;alergia
+brak;lekkie;brak;brak;mokry;zolty;tak;silne;brak;lekkie;notoryczne;brak;alergia
+brak;lekkie;brak;brak;mokry;zielony;tak;silne;brak;lekkie;notoryczne;brak;alergia
+brak;brak;brak;lekkie;suchy;brak;tak;silne;tak;brak;brak;tak;ptasia grypa
+brak;brak;brak;lekkie;mokry;brak;tak;silne;tak;brak;brak;tak;ptasia grypa
+brak;brak;brak;silne;suchy;brak;tak;silne;tak;brak;brak;tak;ptasia grypa
+brak;brak;brak;silne;mokry;brak;tak;silne;tak;brak;brak;tak;ptasia grypa
+brak;brak;brak;lekkie;suchy;brak;tak;silne;brak;brak;brak;tak;ptasia grypa
+brak;brak;brak;lekkie;mokry;brak;tak;silne;brak;brak;brak;tak;ptasia grypa
+brak;brak;brak;silne;suchy;brak;tak;silne;brak;brak;brak;tak;ptasia grypa
+brak;brak;brak;silne;mokry;brak;tak;silne;brak;brak;brak;tak;ptasia grypa
+brak;brak;brak;lekkie;suchy;brak;tak;silne;tak;brak;brak;brak;ptasia grypa
+brak;brak;brak;lekkie;mokry;brak;tak;silne;tak;brak;brak;brak;ptasia grypa
+brak;brak;brak;silne;suchy;brak;tak;silne;tak;brak;brak;brak;ptasia grypa
+brak;brak;brak;silne;mokry;brak;tak;silne;tak;brak;brak;brak;ptasia grypa
+brak;brak;brak;lekkie;suchy;brak;tak;silne;brak;brak;brak;brak;ptasia grypa
+brak;brak;brak;lekkie;mokry;brak;tak;silne;brak;brak;brak;brak;ptasia grypa
+brak;brak;brak;silne;suchy;brak;tak;silne;brak;brak;brak;brak;ptasia grypa
+brak;brak;brak;silne;mokry;brak;tak;silne;brak;brak;brak;brak;ptasia grypa
+silne;silne;brak;silne;brak;brak;tak;brak;tak;brak;brak;tak;grypa jelitowa
+silne;silne;brak;silne;brak;brak;brak;brak;tak;brak;brak;tak;grypa jelitowa
+silne;lekkie;brak;silne;brak;brak;tak;brak;tak;brak;brak;tak;grypa jelitowa
+silne;lekkie;brak;silne;brak;brak;brak;brak;tak;brak;brak;tak;grypa jelitowa
+lekkie;silne;brak;silne;brak;brak;tak;brak;tak;brak;brak;tak;grypa jelitowa
+lekkie;silne;brak;silne;brak;brak;brak;brak;tak;brak;brak;tak;grypa jelitowa
+lekkie;lekkie;brak;silne;brak;brak;tak;brak;tak;brak;brak;tak;grypa jelitowa
+lekkie;lekkie;brak;silne;brak;brak;brak;brak;tak;brak;brak;tak;grypa jelitowa
+brak;brak;brak;brak;suchy;brak;tak;silne;brak;silne;brak;brak;gruzlica
+brak;brak;brak;brak;mokry;brak;tak;silne;brak;silne;brak;brak;gruzlica
+brak;brak;brak;brak;suchy;brak;brak;silne;brak;silne;brak;brak;gruzlica
+brak;brak;brak;brak;mokry;brak;brak;silne;brak;silne;brak;brak;gruzlica
+brak;brak;brak;brak;suchy;brak;tak;silne;brak;lekkie;brak;brak;gruzlica
+brak;brak;brak;brak;mokry;brak;tak;silne;brak;lekkie;brak;brak;gruzlica
+brak;brak;brak;brak;suchy;brak;brak;silne;brak;lekkie;brak;brak;gruzlica
+brak;brak;brak;brak;mokry;brak;brak;silne;brak;lekkie;brak;brak;gruzlica
+silne;silne;lekkie;brak;suchy;brak;tak;brak;tak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;brak;tak;brak;tak;silne;brak;brak;swinska grypa
+silne;silne;lekkie;brak;suchy;brak;tak;brak;brak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;brak;tak;brak;brak;silne;brak;brak;swinska grypa
+silne;silne;lekkie;brak;suchy;przezroczysty;tak;brak;tak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;przezroczysty;tak;brak;tak;silne;brak;brak;swinska grypa
+silne;silne;lekkie;brak;suchy;przezroczysty;tak;brak;brak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;przezroczysty;tak;brak;brak;silne;brak;brak;swinska grypa
+silne;silne;lekkie;brak;suchy;zolty;tak;brak;tak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;zolty;tak;brak;tak;silne;brak;brak;swinska grypa
+silne;silne;lekkie;brak;suchy;zolty;tak;brak;brak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;zolty;tak;brak;brak;silne;brak;brak;swinska grypa
+silne;silne;lekkie;brak;suchy;zielony;tak;brak;tak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;zielony;tak;brak;tak;silne;brak;brak;swinska grypa
+silne;silne;lekkie;brak;suchy;zielony;tak;brak;brak;silne;brak;tak;swinska grypa
+silne;silne;lekkie;brak;suchy;zielony;tak;brak;brak;silne;brak;brak;swinska grypa
+brak;silne;silne;brak;brak;brak;tak;brak;brak;lekkie;brak;brak;angina
+brak;silne;silne;brak;brak;brak;tak;brak;brak;brak;brak;brak;angina
+brak;silne;silne;brak;suchy;brak;tak;brak;brak;lekkie;brak;brak;angina
+brak;silne;silne;brak;suchy;brak;tak;brak;brak;brak;brak;brak;angina
+brak;lekkie;silne;brak;brak;brak;tak;brak;brak;lekkie;brak;brak;angina
+brak;lekkie;silne;brak;brak;brak;tak;brak;brak;brak;brak;brak;angina
+brak;lekkie;silne;brak;suchy;brak;tak;brak;brak;lekkie;brak;brak;angina
+brak;lekkie;silne;brak;suchy;brak;tak;brak;brak;brak;brak;brak;angina
+brak;brak;brak;silne;brak;brak;brak;brak;tak;brak;brak;tak;zatrucie pokarmowe
+lekkie;brak;brak;silne;brak;brak;brak;brak;tak;brak;brak;tak;zatrucie pokarmowe
+brak;brak;brak;silne;brak;brak;tak;brak;tak;brak;brak;tak;zatrucie pokarmowe
+lekkie;brak;brak;silne;brak;brak;tak;brak;tak;brak;brak;tak;zatrucie pokarmowe
+silne;silne;brak;brak;brak;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;brak;brak;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;brak;suchy;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;brak;suchy;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;brak;brak;brak;tak;silne;tak;silne;brak;tak;malaria
+silne;silne;brak;brak;brak;brak;tak;silne;tak;silne;brak;tak;malaria
+silne;silne;brak;brak;suchy;brak;tak;silne;tak;silne;brak;tak;malaria
+silne;silne;brak;brak;suchy;brak;tak;silne;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;brak;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;brak;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;suchy;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;suchy;brak;tak;brak;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;brak;brak;tak;silne;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;brak;brak;tak;silne;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;suchy;brak;tak;silne;tak;silne;brak;tak;malaria
+silne;silne;brak;lekkie;suchy;brak;tak;silne;tak;silne;brak;tak;malaria
