@@ -28,6 +28,7 @@ const App = props => {
   const [diseases, setDiseases] = useState([])
   const [isTraining, setIsTraning] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const [netSuccess, setNetSuccess] = useState(0)
 
   const classes = useStyles()
 
@@ -49,6 +50,10 @@ const App = props => {
       worker.addEventListener('message', function(e) {
         setIsTraning(false)
         setData(JSON.parse(e.data))
+        const totalExpectations = data.reduce((prevValue, currentValue) => prevValue + currentValue.target, 0)
+        const totalOutputs = JSON.parse(e.data).reduce((prevValue, currentValue) => prevValue + currentValue.learning_success, 0)
+        const percentages = (totalOutputs * 100) / totalExpectations
+        setNetSuccess(percentages)
       }, false)
     }
   }, [isTraining])
@@ -58,7 +63,11 @@ const App = props => {
       <Navigation>
         <Network setIsTraning={setIsTraning} />
       </Navigation>
-      {isLoading ? <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}>Wczytywanie...</p> : null}
+      {isLoading ? 
+        <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}>Wczytywanie...</p>
+        :
+        <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}> Stopień nauczenia danych: {netSuccess.toFixed(2)}% </p>
+      }
       {isTraining ? <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}>Trwa proces uczenia...</p> : null}
       {diseases.length !== 0 && data.length !== 0 && !isLoading ?
         <div style={{ padding: '20px' }}>

@@ -3,7 +3,7 @@ const initialState = {
     hidden_layer_1_neurons: 1,
     hidden_layer_2_neurons: 2,
     output_layer_neurons: 1,
-    epochs: 5000,
+    epochs: 5,
     learning_rate: 0.5,
     bias: 0,
     max_weights_value: 1
