@@ -50,9 +50,8 @@ const App = props => {
       worker.addEventListener('message', function(e) {
         setIsTraning(false)
         setData(JSON.parse(e.data))
-        const totalExpectations = data.reduce((prevValue, currentValue) => prevValue + currentValue.target, 0)
-        const totalOutputs = JSON.parse(e.data).reduce((prevValue, currentValue) => prevValue + currentValue.learning_success, 0)
-        const percentages = (totalOutputs * 100) / totalExpectations
+        const averageLearnRate = JSON.parse(e.data).reduce((prevValue, currentValue) => prevValue + currentValue.average_learning_rate, 0)
+        const percentages = averageLearnRate / JSON.parse(e.data).length
         setNetSuccess(percentages)
       }, false)
     }
@@ -66,7 +65,7 @@ const App = props => {
       {isLoading ? 
         <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}>Wczytywanie...</p>
         :
-        <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}> Stopień nauczenia danych: {netSuccess.toFixed(2)}% </p>
+        <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}> Poprawność procesu nauczania wszystkich danych: {netSuccess.toFixed(2)}% </p>
       }
       {isTraining ? <p style={{ color: 'white', fontSize: '30px', padding: '10px', textAlign: 'center' }}>Trwa proces uczenia...</p> : null}
       {diseases.length !== 0 && data.length !== 0 && !isLoading ?
@@ -81,6 +80,7 @@ const App = props => {
                     ))}
                     <TableCell> Cel nauki </TableCell>
                     <TableCell> Nauczono </TableCell>
+                    <TableCell> Poprawność procesu nauczania </TableCell>
                 </TableRow>
                 </TableHead>
                 <TableBody>
@@ -89,6 +89,7 @@ const App = props => {
                     {diseases[1].split(';').map( (value, index) => (
                         <TableCell key={index}> {value} </TableCell>
                     ))}
+                    <TableCell> # </TableCell>
                     <TableCell> # </TableCell>
                     <TableCell> # </TableCell>
                 </TableRow>
@@ -100,8 +101,13 @@ const App = props => {
                                 {symptoms.split(';').map( (symptom, index2) => (
                                     <TableCell key={index2}> {symptom} </TableCell>
                                 ))}
-                                <TableCell> {data[index - 2].target} </TableCell>
-                                <TableCell> {data[index - 2].learning_success === undefined ? 'Nic' : data[index - 2].learning_success} </TableCell>
+                                <TableCell> {data[index - 2].target.map( value => (
+                                  <span style={{ display: 'block' }}> {value} </span>
+                                ))} </TableCell>
+                                <TableCell> {data[index - 2].learning_success.map( value => (
+                                  <span style={{ display: 'block' }}> {value} </span>
+                                ))} </TableCell>
+                                <TableCell> {Number(data[index - 2].average_learning_rate).toFixed(2)}% </TableCell>
                             </TableRow>
                         )
                     }

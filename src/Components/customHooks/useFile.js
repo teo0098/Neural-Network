@@ -9,12 +9,14 @@ const useFile = () => {
             const [, , ...rest] = parsedFetchedData
             data = rest.map( value => {
                 return {
-                    input: value.split(';').map(v => +v).slice(0, value.split(';').length - 1),
-                    target: +value.split(';')[value.split(';').length - 1],
-                    learning_error: undefined,
-                    learning_success: undefined
+                    input: value.split(';').map(v => +v).slice(0, value.split(';').length - 4),
+                    target: value.split(';').map(v => +v).slice(12, value.split(';').length),
+                    learning_error: [],
+                    learning_success: [],
+                    average_learning_rate: 0
                 }
             })
+            console.log(data)
         }   
         catch {
             data = []
