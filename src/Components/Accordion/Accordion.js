@@ -24,10 +24,10 @@ const AccordionComponent = () => {
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
                 >
-                <Typography>Parametry strukturalne sieci</Typography>
+                    <Typography>Parametry strukturalne sieci</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                <NetworkStructure />
+                    <NetworkStructure />
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -36,14 +36,14 @@ const AccordionComponent = () => {
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
                 >
-                <Typography>Parametry procesu uczenia</Typography>
+                    <Typography>Parametry procesu uczenia</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                <LearningProcess />
+                    <LearningProcess />
                 </AccordionDetails>
             </Accordion>
         </div>
     )
 }
 
-export default AccordionComponent;
+export default React.memo(AccordionComponent);

@@ -34,4 +34,4 @@ const Network = ({ setIsTraning }) => {
     )
 }
 
-export default Network;
+export default React.memo(Network);

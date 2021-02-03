@@ -16,7 +16,6 @@ const useFile = () => {
                     average_learning_rate: 0
                 }
             })
-            console.log(data)
         }   
         catch {
             data = []

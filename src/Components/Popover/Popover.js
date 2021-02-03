@@ -36,4 +36,4 @@ const PopoverComponent = () => {
     )
 }
 
-export default PopoverComponent;
+export default React.memo(PopoverComponent);
