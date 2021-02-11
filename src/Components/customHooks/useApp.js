@@ -22,7 +22,7 @@ const useApp = (props) => {
         setIsLoading(false)
       }
       getData()
-    }, [])
+    }, [readDataFile, readDiseasesFile])
     
     useEffect(() => {
       if (isTraining) {
@@ -38,7 +38,7 @@ const useApp = (props) => {
           setNetSuccess(percentages)
         }, false)
       }
-    }, [isTraining])
+    }, [isTraining, data, parameters])
     
     return { diseases, isLoading, netSuccess, setIsTraning, isTraining, data }
 }
