@@ -7,4 +7,4 @@
   <li>Web Worker</li>
 </ul>
 <hr>
-<a href="https://neural-network.herokuapp.com/">Project's preview</a>
+<a href="https://neural-network.vercel.app/">Project's preview</a>
